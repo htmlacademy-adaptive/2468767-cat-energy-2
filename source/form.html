@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Energy подбор программы</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="images/logo.svg" width="33" height="38" alt="Питание для кошек Кэт энерджи">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list siti-list">
+          <li class="siti-list__item siti-list__item--current">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="siti-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="siti-list__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="selection">
+      <div class="container">
+        <h1 class="selection__title title">Подбор программы</h1>
+        <p class="selection__note">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+      </div>
+      <form class="selection__form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="container">
+          <div class="selection__items">
+            <div class="selection__inner">
+              <h2 class="visually-hidden">Данные кота</h2>
+              <div class="selection__data">
+                <label class="selection__items-label" for="name">Имя:*</label>
+                <input class="selection__items-input" type="text" name="name" id="name" placeholder="Барсик">
+              </div>
+              <div class="selection__data">
+                <label class="selection__items-label" for="weight">Вес (кг):*</label>
+                <input class="selection__items-input" type="text" name="weight" id="weight" placeholder="8" oninput="validateNumericInput(this)">
+              </div>
+              <div class="selection__data">
+                <label class="selection__items-label" for="age">Возраст(лет):</label>
+                <input class="selection__items-input" type="text" name="age" id="age" placeholder="4" oninput="validateNumericInput(this)">
+              </div>
+            </div>
+            <div class="selection__items">
+              <h2 class="visually-hidden">Выбор программы</h2>
+              <div class="selection__wrapper-program">
+                <div class="selection__program">
+                  <label class="selection__items-label selection__items-label--radio">
+                    <input class="visually-hidden selection__items-input selection__items-input--radio" type="radio" name="choice" checked>
+                    <span class="selection__items-radio"></span>
+                    <span class="selection__items-text">Похудение</span>
+                  </label>
+                </div>
+                <div class="selection__program">
+                  <label class="selection__items-label selection__items-label--radio">
+                    <input class="visually-hidden selection__items-input selection__items-input--radio" type="radio" name="choice">
+                    <span class="selection__items-radio"></span>
+                    <span class="selection__items-text">Набор массы</span>
+                  </label>
+                </div>
+                <div class="selection__program">
+                  <label class="selection__items-label selection__items-label--radio">
+                    <input class="visually-hidden selection__items-input selection__items-input--radio" type="radio" name="choice">
+                    <span class="selection__items-radio"></span>
+                    <span class="selection__items-text">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="selection__wrapper-title wrapper-title">
+          <div class="container">
+            <h2 class="selection__form-title selection__form-title--decor">Контактные данные
+              <br />(владельца кота)
+            </h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="selection__items selection__items-connect">
+            <div class="selection__data">
+              <label class="selection__items-label" for="email">E-mail:*</label>
+              <input class="selection__items-input selection__items-input--connect" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <span class="selection__icon">
+              </span>
+            </div>
+            <div class="selection__data">
+              <label class="selection__items-label" for="phone">Телефон:*</label>
+              <input class="selection__items-input selection__items-input--connect" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required oninput="validateNumericInput(this)" pattern="[0-9]*" inputmode="numeric" maxlength="11">
+              <span class="selection__icon">
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="selection__wrapper-title wrapper-title">
+          <div class="container">
+            <h2 class="selection__form-title selection__form-title--decor">Комментарий</h2>
+          </div>
+          <div class="container">
+            <div class="selection__textaria">
+              <label class="visually-hidden" for="textarea">Ввести текст</label>
+              <textarea class="selection__items-textarea" name="textarea" id="textarea" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="selection__wrapper-title wrapper-title">
+          <div class="container">
+            <h2 class="selection__form-title selection__form-title--decor">Дополнительно</h2>
+          </div>
+          <div class="container-checkbox">
+            <div class="selection__data-additionally">
+              <div class="selection__data">
+                <label class="selection__items-label selection__items-label--check">
+                  <input class="visually-hidden selection__items-input selection__items-input--check" type="checkbox" name="sweetener" checked>
+                  <span class="selection__items-check"></span>
+                  <span class="selection__items-text">Сахарозаменитель</span>
+                </label>
+              </div>
+              <div class="selection__data">
+                <label class="selection__items-label selection__items-label--check">
+                  <input class="visually-hidden selection__items-input selection__items-input--check" type="checkbox" name="water">
+                  <span class="selection__items-check"></span>
+                  <span class="selection__items-text">Питьевая вода</span>
+                </label>
+              </div>
+              <div class="selection__data">
+                <label class="selection__items-label selection__items-label--check">
+                  <input class="visually-hidden selection__items-input selection__items-input--check" type="checkbox" name="milk">
+                  <span class="selection__items-check"></span>
+                  <span class="selection__items-text">Молоко</span>
+                </label>
+              </div>
+              <div class="selection__data">
+                <label class="selection__items-label selection__items-label--check">
+                  <input class="visually-hidden selection__items-input selection__items-input--check" type="checkbox" name="vitamins">
+                  <span class="selection__items-check"></span>
+                  <span class="selection__items-text">Витамины</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="selection__send">
+            <button class="selection__button button" type="submit">Отправить заявку</button>
+            <span class="selection__required-fields">* — Обязательные поля</span>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="contacts">
+      <div class="contacts-wrapper">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <div class="contacts__text">
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__logo logo">
+        <a>
+          <img src="images/footer-logo.svg" width="128" height="24" alt="Логотип Питание для кошек Кэт энерджи">
+        </a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>
