@@ -47,11 +47,11 @@
               <h2 class="visually-hidden">Данные кота</h2>
               <div class="selection__data">
                 <label class="selection__items-label" for="name">Имя:*</label>
-                <input class="selection__items-input" type="text" name="name" id="name" placeholder="Барсик">
+                <input class="selection__items-input" type="text" name="name" id="name" required placeholder="Барсик">
               </div>
               <div class="selection__data">
                 <label class="selection__items-label" for="weight">Вес (кг):*</label>
-                <input class="selection__items-input" type="text" name="weight" id="weight" placeholder="8" oninput="validateNumericInput(this)">
+                <input class="selection__items-input" type="number" name="weight" required id="weight" placeholder="8" min="0" max="40" oninput="validateNumericInput(this)">
               </div>
               <div class="selection__data">
                 <label class="selection__items-label" for="age">Возраст(лет):</label>
