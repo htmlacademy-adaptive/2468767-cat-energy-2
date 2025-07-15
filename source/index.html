@@ -17,8 +17,13 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="images/logo.svg" width="33" height="38" alt="Питание для кошек Кэт энерджи">
+    <a class="main-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+        <img class="logo__img" src="images/logo.svg" width="33" height="38" alt="Логотип">
+      </picture>
+      <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span>
