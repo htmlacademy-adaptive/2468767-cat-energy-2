@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: $font-base;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+

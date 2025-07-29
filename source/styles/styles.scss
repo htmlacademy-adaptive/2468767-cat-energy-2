@@ -1,8 +1,20 @@
 /* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
-@import "./common/fonts.scss";
+@import "common/variables.scss";
+@import "common/mixins.scss";
+@import "common/fonts.scss";
+@import "common/global.scss";
+@import "common/common.scss";
+@import "common/visually-hidden.scss";
+
 
 /* BLOCKS */
+@import "blocks/header.scss";
+@import "blocks/programs";
+@import "blocks/nav";
+@import "blocks/effect";
+@import "blocks/example";
+@import "blocks/contacts";
+@import "blocks/container";
+@import "blocks/footer";
 @import "./blocks/header.scss";
 
