@@ -1,3 +1,9 @@
+:root{
+--contacts-color:#444444;
+--contacts-color-title:#111111;
+}
+}
+
 .contacts {
   margin: 0;
 }
@@ -6,12 +12,12 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: var(--contacts-color-title);
 }
 
 .contacts p {
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: var(--contacts-color);
 }
 
