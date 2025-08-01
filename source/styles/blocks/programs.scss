@@ -8,19 +8,19 @@
   list-style: none;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $base-text-color;
 }
 
 .programs h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-primary;
   font-size: 24px;
   line-height: 37px;
-  color: #000000;
+  color: $black;
 }
 
 .programs a {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-primary;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: $black;
 }

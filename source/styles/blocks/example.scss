@@ -1,13 +1,13 @@
 .example {
-  background-color: #eaeaea;
+  background-color: $grey-super-light;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $base-text-color;
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family:  $font-primary;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $black;
 }
