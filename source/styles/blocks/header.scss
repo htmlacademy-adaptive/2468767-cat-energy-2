@@ -1,8 +1,28 @@
-/* .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
-} */
 .header {
-  color: #ff0000;
+  min-height: 65px;
+  position: relative;
+  z-index: 10;
+}
+
+@media #{$desktop} {
+  .header--decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0 11px;
+  align-items: center;
+
+  @media #{$tablet} {
+    padding-right: 4px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 55px;
+  }
 }
