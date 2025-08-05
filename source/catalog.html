@@ -329,55 +329,64 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts-wrapper">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <div class="contacts__text">
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="contacts__city">Санкт-Петербург</p>
+      <div class="container">
+        <div class="contacts__inner">
+          <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+          <div class="contacts__text">
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__city">Санкт-Петербург</p>
+          </div>
         </div>
+      </div>
+      <div class="contacts__maps-inner">
+        <iframe class="contacts__maps contacts__maps--nojs" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aad1634271e6ae1b1a8df1816f109a88340982f2b678bf696652e1eb0a2695662&amp;source=constructor" height="400">
+        </iframe>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="container">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__logo logo">
+      <div class="footer__inner">
+        <div class="footer__logo">
           <a class="footer__logo-link" href="index.html" aria-label="Логотип Cat Energy">
-            <img src="images/footer-logo.svg" width="128" height="24" alt="Логотип Питание для кошек Кэт энерджи">
+            <svg width="132" height="25" role="img" aria-labelledby="logo-title">
+              <title id="logo-title">Cat Energy Logo</title>
+              <use xlink:href="images/icons/logo-text.svg#logo-text"></use>
+            </svg>
           </a>
         </div>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Вконтакте">
-                <svg width="27" height="17">
-                  <use href="images/icons/sprite.svg#icon-vk"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Контакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Ютуб"> <svg width="24" height="19">
-                  <use href="images/icons/sprite.svg#icon-youtube"></use>
-                </svg>
-                <span class="visually-hidden">Ютуб</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Телеграм">
-                <svg width="20" height="18">
-                  <use href="images/icons/sprite.svg#icon-tg"></use>
-                </svg>
-                <span class="visually-hidden">мы в Телеграмме</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34">
-              <use href="images/icons/sprite.svg#icon-copyright"></use>
-            </svg>
-            <span class="visually-hidden">Логотип HTML academy</span></a>
-        </div>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Вконтакте">
+              <svg width="28" height="22">
+                <use href="images/icons/icon-vk.svg#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden"> Мы в Контакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Ютуб">
+              <svg width="28" height="22">
+                <use href="images/icons/icon-youtube.svg#icon-youtube"></use>
+              </svg>
+              <span class="visually-hidden"> Мы в Ютубе</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Телеграм">
+              <svg width="28" height="22">
+                <use href="images/icons/icon-telegram.svg#icon-telegram"></use>
+              </svg>
+              <span class="visually-hidden"> Мы в Телеграмме</span>
+            </a>
+          </li>
+        </ul>
+        <a class="developer" href="https://htmlacademy.ru/intensive/adaptive" target="blank" rel="noreferrer noopener">
+          <span>HTML Academy</span>
+          <svg class="icon-html-academy" width="27" height="34">
+            <use href="images/icons/icon-html-academy.svg#icon-html-academy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

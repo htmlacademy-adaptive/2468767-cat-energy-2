@@ -1,0 +1,112 @@
+.hero {
+  background-color: $white;
+  background-image: image-set(
+          url("../../images/hero-bg-mobile@1x.jpg") type("image/jpg"),
+          url("../../images/hero-bg-mobile@2x.jpg") type("image/jpg") 2x,
+          url("../../images/hero-bg-mobile@1x.webp") type("image/webp"),
+          url("../../images/hero-bg-mobile@2x.webp") type("image/webp") 2x
+      ),
+      linear-gradient(to bottom, $green-gradient 303px, transparent 302px);
+  background-repeat: no-repeat;
+  background-size: 320px 302px, 100% 100%;
+  background-position: center top;
+  min-height: 480px;
+  position: relative;
+
+  @media #{$tablet} {
+      background-image: none;
+      margin-bottom: 380px;
+  }
+
+  @media #{$desktop} {
+      background-image: image-set(
+              url("../../images/hero-bg-desktop@1x.jpg") type("image/jpg"),
+              url("../../images/hero-bg-desktop@2x.jpg") type("image/jpg") 2x,
+              url("../../images/hero-bg-desktop@1x.webp") type("image/webp"),
+              url("../../images/hero-bg-desktop@2x.webp") type("image/webp")
+                  2x
+          ),
+          linear-gradient(to left, $green-gradient 50%, transparent 50%);
+      background-size: 1041px 694px, 100% 100%;
+      background-position: top left calc(50% + 521px), center;
+      min-height: 694px;
+      bottom: 0;
+      right: 0;
+      margin-bottom: 82px;
+  }
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
+  @media #{$tablet} {
+      padding-top: 40px;
+      padding-bottom: 0;
+  }
+
+  @media #{$desktop} {
+      padding-bottom: 0;
+      margin-bottom: 82px;
+  }
+}
+.hero__title {
+  color: $white;
+  padding: 26px 15px 0;
+  text-align: center;
+  margin: 0;
+  transform: translate(-1px, -5px);
+
+  @media #{$tablet} {
+      color: $black;
+      text-align: start;
+      padding-top: 0;
+      padding-left: 90px;
+      margin-bottom: 40px;
+  }
+
+  @media #{$desktop} {
+      padding: 188px 0 0 80px;
+      max-width: 500px;
+  }
+}
+
+.hero__text {
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  padding-top: 24px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 302px;
+  transform: translateY(-2px);
+
+  @media #{$tablet} {
+      color: $black;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: start;
+      padding-top: 0;
+      padding-left: 90px;
+      margin-bottom: 50px;
+  }
+
+  @media #{$desktop} {
+      padding: 0 80px;
+      max-width: 450px;
+      margin-bottom: 64px;
+  }
+}
+
+.hero__img {
+  position: absolute;
+  top: 167px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: heroPicEmerge 2s ease-in-out forwards;
+  overflow-x: hidden;
+}
