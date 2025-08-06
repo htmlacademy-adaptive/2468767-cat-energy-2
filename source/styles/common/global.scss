@@ -2,7 +2,22 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-base;
+    color: $base-text-color;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.page__body {
+    animation: emergeBody 1s ease-in-out;
+    overflow-x: hidden;
 }
 
 img {
@@ -10,13 +25,3 @@ img {
   height: auto;
   object-fit: contain;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: $font-base;
-  font-size: 14px;
-  line-height: 18px;
-  overflow-x: hidden;
-}
-

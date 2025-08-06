@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  outline: none;
+
+  @media #{$tablet} {
+    margin-right: 20px;
+  }
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  margin-right: 56px;
+
+  @media #{$tablet} {
+    margin-right: 13px;
+  }
+
+  @media #{$desktop} {
+    margin-right: 14px;
+  }
+}
+
+.logo__text {
+  margin-bottom: 2px;
+
+  @media #{$desktop} {
+    width: 118px;
+    height: 21px;
+  }
+}

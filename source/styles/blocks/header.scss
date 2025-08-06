@@ -26,3 +26,10 @@
     padding-top: 55px;
   }
 }
+@media #{$mobile-only} {
+  .header--nojs .header__inner {
+    display: block;
+    padding-bottom: 0;
+  }
+}
+
