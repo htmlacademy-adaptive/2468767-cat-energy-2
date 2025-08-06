@@ -1,4 +1,4 @@
-.header {
+.main-header {
   min-height: 65px;
   position: relative;
   z-index: 10;
@@ -26,3 +26,10 @@
     padding-top: 55px;
   }
 }
+@media #{$mobile-only} {
+  .header--nojs .header__inner {
+    display: block;
+    padding-bottom: 0;
+  }
+}
+

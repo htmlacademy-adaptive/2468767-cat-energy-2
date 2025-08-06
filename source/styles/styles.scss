@@ -8,17 +8,19 @@
 
 
 /* BLOCKS */
-@import "blocks/header.scss";
+@import "blocks/header";
 @import "blocks/programs";
 @import "blocks/nav";
-@import "blocks/hero.scss";
+@import "blocks/hero";
 @import "blocks/effect";
 @import "blocks/example";
 @import "blocks/product";
 @import "blocks/contacts";
 @import "blocks/container";
-@import "blocks/product.scss";
-@import "blocks/additional.scss";
+@import "blocks/additional";
 @import "blocks/footer";
-@import "blocks/header.scss";
-
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/social";
+@import "blocks/developer";
+@import "blocks/selection";

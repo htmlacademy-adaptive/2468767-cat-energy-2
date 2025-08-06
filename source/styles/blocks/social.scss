@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px 0 14px;
+  width: 100%;
+  border-bottom: 1px solid $grey-secondary;
+  border-top: 1px solid $grey-secondary;
+  list-style: none;
+  transform: translateY(2px);
+
+  @media #{$tablet} {
+      border: none;
+      padding: 0;
+      justify-content: flex-start;
+      padding-left: 28px;
+      align-self: flex-end;
+  }
+}
+
+.social__link {
+  fill: $grey-dark;
+}
+
+.social__link:focus,
+.social__link:hover {
+  fill: $green-base;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
