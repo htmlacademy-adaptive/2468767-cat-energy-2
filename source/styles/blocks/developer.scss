@@ -1,0 +1,40 @@
+.developer {
+  display: flex;
+  min-width: 280px;
+  height: 34px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 38px;
+  color: $base-text-color;
+  fill: $grey-dark;
+  transform: translate(2px, -3px);
+
+  @media #{$tablet} {
+      padding: 0;
+      min-width: 165px;
+  }
+}
+
+.developer span {
+  font-family: $font-base;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-right: auto;
+
+  @media #{$tablet} {
+      margin: 0;
+      padding-right: 23px;
+      align-items: center;
+  }
+}
+
+.developer:focus,
+.developer:hover {
+  fill: $green-base;
+}
+
+.developer:active {
+  opacity: 0.3;
+}
