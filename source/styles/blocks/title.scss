@@ -1,0 +1,13 @@
+.title {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+  margin: 0;
+
+  @media #{$tablet} {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

@@ -1,0 +1,47 @@
+.comparator-container {
+  position: relative;
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  transform: translate(70px, -7px);
+}
+
+.image-before,
+.image-after {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.image-after {
+  display: block;
+  width: 100%;
+  margin-left: 44px;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  cursor: ew-resize;
+  transform: translateX(-50%);
+  z-index: 10;
+}

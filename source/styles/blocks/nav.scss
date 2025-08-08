@@ -1,4 +1,5 @@
-.main-nav{
+.menu-nav {
+  z-index: 0;
   border-top: 1px solid $grey-light;
   margin-left: -20px;
   margin-right: -20px;
@@ -8,7 +9,8 @@
       width: 42%;
   }
 }
-.main-nav::before {
+
+.menu-nav::before {
   content: "";
   position: absolute;
   top: 0;
@@ -27,7 +29,8 @@
       background-color: transparent;
   }
 }
-.main-nav__list{
+
+.menu-nav__list {
   display: flex;
   flex-direction: column;
   font-family: $font-primary;
@@ -72,11 +75,13 @@
       background-color: transparent;
   }
 }
-.main-nav__list.active {
+
+.menu-nav__list.active {
   transform: translateY(0);
   top: 64px;
   animation: menuEmerge 1s ease-in-out;
 }
+
 @keyframes menuEmerge {
   from {
       opacity: 0;
@@ -87,14 +92,16 @@
       filter: blur(0);
   }
 }
+
 @media #{$mobile-only} {
-  .menu-nav--nojs .main-nav__list {
+  .menu-nav--nojs .menu-nav__list {
       transform: translateY(0);
       z-index: 0;
       position: static;
   }
 }
-.siti-list__item {
+
+.menu-nav__item {
   padding: 23px 20px;
   border-bottom: 1px solid $grey-light;
   margin: 0;
@@ -104,43 +111,46 @@
       padding: 0;
   }
 }
-.main-nav__link{
+
+.menu-nav__link {
   color: $black;
 }
 
-.main-nav__link:hover,
-.main-nav__link:focus {
+.menu-nav__link:hover,
+.menu-nav__link:focus {
   opacity: 0.7;
 }
 
-.main-nav__link:active {
+.menu-nav__link:active {
   opacity: 0.3;
 }
+
 @media #{$desktop} {
-  .main-nav__link--decor {
+  .menu-nav__link--decor {
       color: $white;
   }
 }
 
 @media #{$desktop} {
-  .main-nav__link--decor.main-nav__link--current {
+  .menu-nav__link--decor.menu-nav__link--current {
       border-bottom: 2px solid $white;
       padding-bottom: 6px;
   }
 }
 
 @media #{$tablet} {
-  .main-nav__link--current {
+  .menu-nav__link--current {
       border-bottom: 2px solid $green-base;
       padding-bottom: 5px;
   }
 }
 
 @media #{$desktop} {
-  .main-nav__link--current {
+  .menu-nav__link--current {
       padding-bottom: 6px;
   }
 }
+
 .menu-nav__toggle {
   display: block;
   width: 24px;
@@ -198,4 +208,3 @@
 .menu-nav__toggle.active span:last-child {
   transform: translateY(0) rotate(-45deg);
 }
-
