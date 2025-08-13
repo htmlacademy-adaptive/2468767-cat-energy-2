@@ -45,3 +45,32 @@
   transform: translateX(-50%);
   z-index: 10;
 }
+.slider-handle {
+  position: absolute;
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMSIgeT0iMSIgd2lkdGg9IjM4IiBoZWlnaHQ9IjM4IiByeD0iMTkiIGZpbGw9IndoaXRlIi8+CjxyZWN0IHg9IjEiIHk9IjEiIHdpZHRoPSIzOCIgaGVpZ2h0PSIzOCIgcng9IjE5IiBzdHJva2U9IiM2NjY2NjYiIHN0cm9rZS13aWR0aD0iMiIvPgo8cGF0aCBkPSJNMTYgMTFMOCAyMEwxNiAyOVYxMVoiIGZpbGw9IiM2NjY2NjYiLz4KPHBhdGggZD0iTTMyIDIwTDI0IDExVjI5TDMyIDIwWiIgZmlsbD0iIzY2NjY2NiIvPgo8L3N2Zz4K");
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: ew-resize;
+}
+
+.slider-handle,
+.slider {
+  &:hover {
+      filter: brightness(0) saturate(100%) invert(63%) sepia(15%)
+          saturate(5207%) hue-rotate(55deg) brightness(108%) contrast(60%);
+      transition: 0.4s ease-in-out;
+      opacity: 90%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .image-before {
+      height: auto;
+      object-fit: cover;
+      width: 50%;
+  }
+}

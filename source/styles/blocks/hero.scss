@@ -52,6 +52,25 @@
       margin-bottom: 82px;
   }
 }
+
+.hero__inner--text-wrapper {
+  animation: emergeHero 1.5s ease-in-out forwards;
+}
+
+@keyframes emergeHero {
+  0% {
+      opacity: 0;
+      filter: blur(8px);
+      transform: translateX(-120%);
+  }
+
+  100% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+  }
+}
+
 .hero__title {
   color: $white;
   padding: 26px 15px 0;
@@ -108,5 +127,99 @@
   left: 50%;
   transform: translateX(-50%);
   animation: heroPicEmerge 2s ease-in-out forwards;
-  overflow-x: hidden;
+  // overflow-x: hidden;
+
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+      animation: none;
+      transform: translate(-110px, 50px);
+      // overflow-x: hidden;
+      // width: 100%;
+      // max-width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+      // z-index: -1;
+      // position: relative;
+      // transform: translate(0px, 0px);
+  }
+
+
+  @media #{$tablet} {
+      // margin: -80px auto 0;
+      z-index: 1;
+  }
+
+  @media #{$desktop} {
+      position: absolute;
+      top: 230px;
+      left: 58%;
+      transform: translateX(-50%);
+  }
 }
+
+@keyframes heroPicEmerge {
+  0% {
+      opacity: 0;
+      filter: blur(8px);
+      transform: translateX(40%);
+  }
+
+  100% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(-56%);
+  }
+}
+
+.hero__link {
+  font-family: $font-primary;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  background-color: $green-base;
+  color: $white;
+  padding: 11px;
+  padding-left: 23px;
+  padding-right: 27px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1440px) {
+      margin-left: 90px;
+
+  }
+
+  @media screen and (max-width: 768px) {
+      padding: 14px 26px;
+      font-size: 20px;
+      margin: 0 auto;
+      line-height: 26px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+
+  }
+
+  @media #{$desktop} {
+      margin-left: 83px;
+  }
+}
+
+.hero__link:hover,
+.hero__link:focus {
+  background-color: $green-primary;
+}
+
+.hero__link:active {
+  background-color: $green-primary;
+  color: $white-gradient;
+}
+
+.hero__link.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+
+

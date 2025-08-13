@@ -1,13 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: $font-base;
+    color: $base-text-color;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 
-h2 {
-  font-family: $font-primary;
-  font-size: 36px;
-  line-height: 40px;
-  color: $black;
+.page__body {
+    animation: emergeBody 1s ease-in-out;
+    overflow-x: hidden;
 }
 
+@keyframes emergeBody {
+    0% {
+        display: none;
+        opacity: 0;
+        filter: blur(8px);
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        filter: blur(0);
+    }
+}

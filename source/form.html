@@ -12,11 +12,10 @@
   <link rel="icon" href="favicons/favicons-152.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="main-header header--decor header--nojs">
+  <header class="main-header header--nojs">
     <div class="container">
       <div class="header__inner">
         <a class="main-header__logo" href="#">
@@ -247,6 +246,17 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/index.js" defer></script>
+  <script>
+
+
+    function validateNumericInput(input) {
+
+      input.value = input.value.replace(/[^0-9]/g, '');
+    }
+
+  </script>
+
 </body>
 
 </html>
