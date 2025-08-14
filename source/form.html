@@ -12,11 +12,10 @@
   <link rel="icon" href="favicons/favicons-152.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="main-header header--decor header--nojs">
+  <header class="main-header header--nojs">
     <div class="container">
       <div class="header__inner">
         <a class="main-header__logo" href="#">
@@ -40,7 +39,7 @@
               </a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__link menu-nav__link--current" href="form.html">
+              <a class="menu-nav__link  menu-nav__link--current" href="#">
                 Подбор программы
               </a>
             </li>
@@ -208,7 +207,7 @@
           <a class="footer__logo-link" href="index.html" aria-label="Логотип Cat Energy">
             <svg width="132" height="25" role="img" aria-labelledby="logo-title">
               <title id="logo-title">Cat Energy Logo</title>
-              <use xlink:href="images/icons/logo-text.svg#logo-text"></use>
+              <use xlink-href="images/icons/logo-text.svg#logo-text"></use>
             </svg>
           </a>
         </div>
@@ -218,7 +217,7 @@
               <svg width="28" height="22">
                 <use href="images/icons/icon-vk.svg#icon-vk"></use>
               </svg>
-              <span class="visually-hidden"> Мы в Контакте</span>
+              <span class="visually-hidden">Мы в Контакте</span>
             </a>
           </li>
           <li class="social__item">
@@ -226,7 +225,7 @@
               <svg width="28" height="22">
                 <use href="images/icons/icon-youtube.svg#icon-youtube"></use>
               </svg>
-              <span class="visually-hidden"> Мы в Ютубе</span>
+              <span class="visually-hidden">Мы в Ютубе</span>
             </a>
           </li>
           <li class="social__item">
@@ -234,7 +233,7 @@
               <svg width="28" height="22">
                 <use href="images/icons/icon-telegram.svg#icon-telegram"></use>
               </svg>
-              <span class="visually-hidden"> Мы в Телеграмме</span>
+              <span class="visually-hidden">Мы в Телеграмме</span>
             </a>
           </li>
         </ul>
@@ -247,6 +246,14 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/index.js" defer></script>
+  <script>
+    function validateNumericInput(input) {
+      input.value = input.value.replace(/[^0-9]/g, '');
+    }
+
+  </script>
+
 </body>
 
 </html>
