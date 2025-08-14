@@ -12,7 +12,6 @@
   <link rel="icon" href="favicons/favicons-152.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -30,7 +29,7 @@
         <nav class="menu-nav menu-nav--nojs">
           <ul class="menu-nav__list">
             <li class="menu-nav__item">
-              <a class="menu-nav__link menu-nav__link--decor menu-nav__link--current" href="index.html">
+              <a class="menu-nav__link menu-nav__link--decor menu-nav__link--current" href="#">
                 Главная
               </a>
             </li>
@@ -169,9 +168,9 @@
           <div class="comparator-container">
             <div class="image-wrapper">
               <div class="image-before">
-                <img id="before" src="images/tablet-before-example@1x@1x.png" alt="Before">
+                <img id="before" src="images/slider-before-tablet@1x.png" width="570" height="521" alt="Before">
               </div>
-              <img id="after" class="image-after" src="images/tablet-after-example@1x@1x.png" alt="After">
+              <img class="image-after" id="after" src="images/slider-after-tablet@1x.png" width="570" height="521" alt="After">
               <div class="slider">
                 <div class="slider-handle"></div>
               </div>
@@ -203,7 +202,7 @@
           <a class="footer__logo-link" href="index.html" aria-label="Логотип Cat Energy">
             <svg width="132" height="25" role="img" aria-labelledby="logo-title">
               <title id="logo-title">Cat Energy Logo</title>
-              <use xlink:href="images/icons/logo-text.svg#logo-text"></use>
+              <use xlink-href="images/icons/logo-text.svg#logo-text"></use>
             </svg>
           </a>
         </div>
@@ -213,7 +212,7 @@
               <svg width="28" height="22">
                 <use href="images/icons/icon-vk.svg#icon-vk"></use>
               </svg>
-              <span class="visually-hidden"> Мы в Контакте</span>
+              <span class="visually-hidden">Мы в Контакте</span>
             </a>
           </li>
           <li class="social__item">
@@ -221,7 +220,7 @@
               <svg width="28" height="22">
                 <use href="images/icons/icon-youtube.svg#icon-youtube"></use>
               </svg>
-              <span class="visually-hidden"> Мы в Ютубе</span>
+              <span class="visually-hidden">Мы в Ютубе</span>
             </a>
           </li>
           <li class="social__item">
@@ -229,7 +228,7 @@
               <svg width="28" height="22">
                 <use href="images/icons/icon-telegram.svg#icon-telegram"></use>
               </svg>
-              <span class="visually-hidden"> Мы в Телеграмме</span>
+              <span class="visually-hidden">Мы в Телеграмме</span>
             </a>
           </li>
         </ul>
@@ -242,6 +241,8 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/index.js" defer></script>
+  <script src="scripts/comparator.js" defer></script>
 
 </body>
 
