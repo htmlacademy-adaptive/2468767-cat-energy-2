@@ -1,0 +1,1 @@
+[".header",".menu-nav",".contacts__maps"].forEach(e=>document.querySelector(e)?.classList.remove(`${e.split(".")[1]}--nojs`));document.getElementById("burger")?.addEventListener("click",()=>{let e=document.querySelector(".menu-nav__list");e&&e.classList.toggle("active");let t=document.querySelector(".menu-nav__toggle");t&&t.classList.toggle("active")});
