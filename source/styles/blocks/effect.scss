@@ -3,14 +3,14 @@
   margin-bottom: 42px;
 
   @media #{$tablet} {
-      line-height: 60px;
-      padding-top: 16px;
-      margin-bottom: 32px;
+    line-height: 60px;
+    padding-top: 16px;
+    margin-bottom: 32px;
   }
 
   @media #{$desktop} {
-      margin-bottom: 32px;
-      transform: translateY(-5px);
+    margin-bottom: 32px;
+    transform: translateY(-5px);
   }
 }
 
@@ -22,17 +22,17 @@
   list-style: none;
 
   @media #{$tablet} {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-      row-gap: 37px;
-      column-gap: 62px;
-      margin-bottom: 19px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    row-gap: 37px;
+    column-gap: 62px;
+    margin-bottom: 19px;
 
-      @media #{$desktop} {
-          column-gap: 80px;
-          margin-bottom: 69px;
-          display: flex;
-      }
+    @media #{$desktop} {
+      column-gap: 80px;
+      margin-bottom: 69px;
+      display: flex;
+    }
   }
 }
 
@@ -42,26 +42,26 @@
   transform: translateY(-3px);
 
   @media #{$tablet} {
-      min-height: 280px;
-      width: 250px;
-      margin: 0;
-      padding-top: 40px;
-      position: relative;
-      counter-increment: effect__list;
+    min-height: 280px;
+    width: 250px;
+    margin: 0;
+    padding-top: 40px;
+    position: relative;
+    counter-increment: effect__list;
   }
 }
 
 @media #{$tablet} {
   .effect__item::after {
-      content: counter(effect__list);
-      position: absolute;
-      font-family: $font-primary;
-      font-size: 280px;
-      line-height: 1;
-      color: $grey-extra-light;
-      top: 0;
-      left: 116px;
-      z-index: -1;
+    content: counter(effect__list);
+    position: absolute;
+    font-family: $font-primary;
+    font-size: 280px;
+    line-height: 1;
+    color: $grey-extra-light;
+    top: 0;
+    left: 116px;
+    z-index: -1;
   }
 }
 
@@ -76,8 +76,8 @@
   background-position: center;
 
   @media #{$tablet} {
-      width: 80px;
-      height: 80px;
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -87,7 +87,7 @@
   background-size: 30px 32px;
 
   @media #{$tablet} {
-      grid-column: 1 / 2;
+    grid-column: 1 / 2;
   }
 }
 
@@ -97,7 +97,7 @@
   background-size: 26px 29px;
 
   @media #{$tablet} {
-      grid-column: 2 / 3;
+    grid-column: 2 / 3;
   }
 }
 
@@ -107,7 +107,7 @@
   background-size: 25px 30px;
 
   @media #{$tablet} {
-      grid-column: 1 / 2;
+    grid-column: 1 / 2;
   }
 }
 
@@ -117,7 +117,7 @@
   background-size: 26px 31px;
 
   @media #{$tablet} {
-      grid-column: 2 / 3;
+    grid-column: 2 / 3;
   }
 }
 
@@ -126,16 +126,16 @@
   margin: 0;
 
   & br {
-      display: none;
+    display: none;
   }
 
   @media #{$tablet} {
-      padding: 110px 0 57px;
-      font-size: 16px;
-      line-height: 24px;
+    padding: 110px 0 57px;
+    font-size: 16px;
+    line-height: 24px;
 
-      & br {
-          display: block;
-      }
+    & br {
+      display: block;
+    }
   }
 }

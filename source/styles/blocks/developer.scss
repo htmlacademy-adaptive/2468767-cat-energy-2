@@ -10,8 +10,8 @@
   transform: translate(2px, -3px);
 
   @media #{$tablet} {
-      padding: 0;
-      min-width: 165px;
+    padding: 0;
+    min-width: 165px;
   }
 }
 
@@ -24,9 +24,9 @@
   margin-right: auto;
 
   @media #{$tablet} {
-      margin: 0;
-      padding-right: 23px;
-      align-items: center;
+    margin: 0;
+    padding-right: 23px;
+    align-items: center;
   }
 }
 

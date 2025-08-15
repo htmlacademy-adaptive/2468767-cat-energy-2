@@ -4,7 +4,7 @@
   transform: translateY(-10px);
 
   @media #{$tablet} {
-      margin-bottom: 78px;
+    margin-bottom: 78px;
   }
 }
 
@@ -14,8 +14,6 @@
   margin: 0 auto;
   transform: translateY(-16px);
 }
-
-
 
 .submit__button {
   background-color: $green-base;
@@ -45,13 +43,13 @@
   color: $black;
 
   @media #{$tablet} {
-      font-size: 36px;
-      line-height: 36px;
-      margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
   }
 
   @media #{$desktop} {
-      margin-left: -40px;
+    margin-left: -40px;
   }
 }
 
@@ -63,15 +61,15 @@
   background-color: $white;
 
   @media #{$tablet} {
-      margin: 0 -40px;
-      padding: 0 40px;
+    margin: 0 -40px;
+    padding: 0 40px;
   }
 }
 
 @media #{$desktop} {
   .additional__inner {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -81,8 +79,8 @@
   list-style: none;
 
   @media #{$desktop} {
-      margin-right: 81px;
-      margin-bottom: 87px;
+    margin-right: 81px;
+    margin-bottom: 87px;
   }
 }
 
@@ -91,21 +89,21 @@
   border-top: 1px solid $grey;
 
   @media #{$tablet} {
-      border: 1px solid $grey;
-      border-bottom: none;
-      padding: 26px 38px 17px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-wrap: wrap;
+    border: 1px solid $grey;
+    border-bottom: none;
+    padding: 26px 38px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
   }
 
   @media #{$desktop} {
-      border-left: none;
-      border-right: none;
-      flex-wrap: nowrap;
-      padding: 15px 0 17px;
-      align-items: center;
+    border-left: none;
+    border-right: none;
+    flex-wrap: nowrap;
+    padding: 15px 0 17px;
+    align-items: center;
   }
 }
 
@@ -125,18 +123,18 @@
   transform: translateY(-3px);
 
   @media #{$tablet} {
-      font-size: 20px;
-      line-height: 20px;
-      margin: 0 0 25px;
-      padding-right: 20px;
-      width: calc(100% - 300px);
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 25px;
+    padding-right: 20px;
+    width: calc(100% - 300px);
   }
 
   @media #{$desktop} {
-      margin: 0;
-      width: 314px;
-      padding-right: 10px;
-      margin-right: 10px;
+    margin: 0;
+    width: 314px;
+    padding-right: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -146,37 +144,37 @@
   line-height: 14px;
 
   @media #{$tablet} {
-      font-size: 16px;
-      line-height: 20px;
-      margin: 0 0 22px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 22px;
   }
 
   @media #{$desktop} {
-      margin: 0;
+    margin: 0;
   }
 }
 
 @media #{$tablet} {
   .additional__text {
-      margin: 0 42px 0 0;
-      min-width: 140px;
-      text-align: right;
+    margin: 0 42px 0 0;
+    min-width: 140px;
+    text-align: right;
   }
 }
 
 @media #{$desktop} {
   .additional__text {
-      text-align: left;
-      min-width: 195px;
+    text-align: left;
+    min-width: 195px;
   }
 }
 
 @media #{$tablet} {
   .additional__value {
-      margin: 0;
-      min-width: 50px;
-      flex-shrink: 0;
-      text-align: right;
+    margin: 0;
+    min-width: 50px;
+    flex-shrink: 0;
+    text-align: right;
   }
 }
 
@@ -185,13 +183,13 @@
   transform: translateY(-4px);
 
   @media #{$tablet} {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   @media #{$desktop} {
-      margin: 0;
-      width: 244px;
-      margin-left: 40px;
+    margin: 0;
+    width: 244px;
+    margin-left: 40px;
   }
 }
 
@@ -212,68 +210,68 @@
   transform: translateX(-50%);
 
   @media #{$tablet} {
-      width: 80px;
-      height: 83px;
-      background-size: 80px 83px;
-      left: 118px;
+    width: 80px;
+    height: 83px;
+    background-size: 80px 83px;
+    left: 118px;
   }
 
   @media #{$desktop} {
-      top: 56px;
-      left: 50%;
-      transform: translateX(-50%);
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .additional__gift-background {
   background-image: image-set(
-          url("../../images/gift-mobile@1x.jpg") type("image/jpg"),
-          url("../../images/gift-mobile@2x.jpg") type("image/jpg") 2x,
-          url("../../images/gift-mobile@1x.webp") type("image/webp"),
-          url("../../images/gift-mobile@2x.webp") type("image/webp") 2x
-      ),
-      linear-gradient(
-          to bottom,
-          $green-gradient-secondary 290px,
-          transparent 290px
-      );
+      url("../../images/gift-mobile@1x.jpg") type("image/jpg"),
+      url("../../images/gift-mobile@2x.jpg") type("image/jpg") 2x,
+      url("../../images/gift-mobile@1x.webp") type("image/webp"),
+      url("../../images/gift-mobile@2x.webp") type("image/webp") 2x
+    ),
+    linear-gradient(
+      to bottom,
+      $green-gradient-secondary 290px,
+      transparent 290px
+    );
   background-repeat: no-repeat;
   background-size: cover, 100% 100%;
   background-position: center;
   margin: 35px 0;
 
   @media #{$tablet} {
-      background-image: image-set(
-              url("../../images/gift-tablet@1x.jpg") type("image/jpg"),
-              url("../../images/gift-tablet@2x.jpg") type("image/jpg") 2x,
-              url("../../images/gift-tablet@1x.webp") type("image/webp"),
-              url("../../images/gift-tablet@2x.webp") type("image/webp") 2x
-          ),
-          linear-gradient(
-              to bottom,
-              $green-gradient-secondary 200px,
-              transparent 200px
-          );
-      background-size: cover, 100% 100%;
-      background-position: top;
-      margin: 70px 0 74px;
+    background-image: image-set(
+        url("../../images/gift-tablet@1x.jpg") type("image/jpg"),
+        url("../../images/gift-tablet@2x.jpg") type("image/jpg") 2x,
+        url("../../images/gift-tablet@1x.webp") type("image/webp"),
+        url("../../images/gift-tablet@2x.webp") type("image/webp") 2x
+      ),
+      linear-gradient(
+        to bottom,
+        $green-gradient-secondary 200px,
+        transparent 200px
+      );
+    background-size: cover, 100% 100%;
+    background-position: top;
+    margin: 70px 0 74px;
   }
 
   @media #{$desktop} {
-      background-image: image-set(
-              url("../../images/gift-desktop@1x.jpg") type("image/jpg"),
-              url("../../images/gift-desktop@2x.jpg") type("image/jpg") 2x,
-              url("../../images/gift-desktop@1x.webp") type("image/webp"),
-              url("../../images/gift-desktop@2x.webp") type("image/webp") 2x
-          ),
-          linear-gradient(
-              to bottom,
-              $green-gradient-secondary 288px,
-              transparent 288px
-          );
-      background-size: 245px 288px, 100% 100%;
-      background-position: top;
-      margin-top: 0;
+    background-image: image-set(
+        url("../../images/gift-desktop@1x.jpg") type("image/jpg"),
+        url("../../images/gift-desktop@2x.jpg") type("image/jpg") 2x,
+        url("../../images/gift-desktop@1x.webp") type("image/webp"),
+        url("../../images/gift-desktop@2x.webp") type("image/webp") 2x
+      ),
+      linear-gradient(
+        to bottom,
+        $green-gradient-secondary 288px,
+        transparent 288px
+      );
+    background-size: 245px 288px, 100% 100%;
+    background-position: top;
+    margin-top: 0;
   }
 }
 
@@ -287,16 +285,15 @@
   width: 161px;
 
   @media #{$tablet} {
-      padding: 71px 0 69px;
-      margin-right: 125px;
-      text-align: start;
+    padding: 71px 0 69px;
+    margin-right: 125px;
+    text-align: start;
   }
 
   @media #{$desktop} {
-      padding: 186px 41px 43px;
-      margin: 0 auto;
-      text-align: center;
-      width: 100%;
+    padding: 186px 41px 43px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
   }
 }
-

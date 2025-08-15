@@ -4,13 +4,13 @@
   border-bottom: 1px solid $grey-special;
 
   @media #{$tablet} {
-      padding: 40px 30px 70px;
-      text-align: start;
-      border: none;
+    padding: 40px 30px 70px;
+    text-align: start;
+    border: none;
 
-      @media #{$desktop} {
-          padding: 60px 0 64px;
-      }
+    @media #{$desktop} {
+      padding: 60px 0 64px;
+    }
   }
 }
 
@@ -22,17 +22,17 @@
   column-gap: 20px;
 
   @media #{$tablet} {
-      grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
-      column-gap: 60px;
-      row-gap: 45px;
-      margin-bottom: 73px;
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    column-gap: 60px;
+    row-gap: 45px;
+    margin-bottom: 73px;
   }
 
   @media #{$desktop} {
-      grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-      column-gap: 80px;
-      row-gap: 46px;
-      margin-bottom: 76px;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    column-gap: 80px;
+    row-gap: 46px;
+    margin-bottom: 76px;
   }
 }
 
@@ -45,30 +45,26 @@
   min-height: 209px;
 
   @media #{$tablet} {
-      border: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 37px 40px;
-      margin: 16px 0 0;
-      padding-top: 14px;
-      background-color: $grey-extra-light;
-      background-image: linear-gradient(
-          to bottom,
-          $white 81px,
-          transparent 81px
-      );
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 37px 40px;
+    margin: 16px 0 0;
+    padding-top: 14px;
+    background-color: $grey-extra-light;
+    background-image: linear-gradient(to bottom, $white 81px, transparent 81px);
   }
 }
 
 @media #{$tablet} {
   .product__list-item--more {
-      background-color: $white;
-      border: 2px solid $grey-super-light;
-      margin-top: 98px;
-      padding-top: 2px;
-      padding-bottom: 36px;
+    background-color: $white;
+    border: 2px solid $grey-super-light;
+    margin-top: 98px;
+    padding-top: 2px;
+    padding-bottom: 36px;
   }
 }
 
@@ -79,13 +75,13 @@
   margin-bottom: 9px;
 
   @media #{$tablet} {
-      width: 100%;
-      height: 210px;
-      margin-bottom: 20px;
+    width: 100%;
+    height: 210px;
+    margin-bottom: 20px;
   }
 
   @media #{$desktop} {
-      margin-bottom: 13px;
+    margin-bottom: 13px;
   }
 }
 
@@ -99,13 +95,13 @@
   transform: translateY(25px);
 
   @media #{$tablet} {
-      margin: auto auto;
-      width: 60px;
-      height: 60px;
+    margin: auto auto;
+    width: 60px;
+    height: 60px;
   }
 
   @media #{$desktop} {
-      margin-bottom: 41px;
+    margin-bottom: 41px;
   }
 }
 
@@ -118,12 +114,12 @@
   width: 100%;
 
   @media #{$tablet} {
-      justify-content: unset;
-      margin-bottom: 23px;
+    justify-content: unset;
+    margin-bottom: 23px;
   }
 
   @media #{$desktop} {
-      margin-bottom: 27px;
+    margin-bottom: 27px;
   }
 }
 
@@ -145,12 +141,12 @@
   transform: translate(-2px, -2px);
 
   @media #{$tablet} {
-      font-size: 20px;
-      line-height: 24px;
-      padding: 0;
-      max-width: 135px;
-      text-align: center;
-      margin: 0 auto 20px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0;
+    max-width: 135px;
+    text-align: center;
+    margin: 0 auto 20px;
   }
 }
 
@@ -164,12 +160,12 @@
   transform: translateY(25px);
 
   @media #{$tablet} {
-      margin-bottom: 24px;
-      max-width: 178px;
+    margin-bottom: 24px;
+    max-width: 178px;
   }
 
   @media #{$desktop} {
-      margin-bottom: 27px;
+    margin-bottom: 27px;
   }
 }
 
@@ -178,13 +174,13 @@
   justify-content: space-between;
 
   @media #{$tablet} {
-      border-bottom: 1px solid $grey;
-      padding-bottom: 3px;
-      margin-bottom: 8px;
+    border-bottom: 1px solid $grey;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
   }
 
   @media #{$desktop} {
-      padding-bottom: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -194,8 +190,8 @@
   line-height: 16px;
 
   @media #{$tablet} {
-      font-size: 16px;
-      line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -208,13 +204,13 @@
   transform: translateY(25px);
 
   @media #{$tablet} {
-      font-size: 16px;
-      line-height: 18px;
-      margin-bottom: 81px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 81px;
   }
 
   @media #{$desktop} {
-      margin: 0 0 92px;
+    margin: 0 0 92px;
   }
 }
 
@@ -237,10 +233,10 @@
 
 @media screen and (max-width: 768px) {
   .product__card--more {
-      height: auto;
+    height: auto;
   }
   .product__button--transparent {
-      height: 60px;
-      color: #000000;
+    height: 60px;
+    color: #000000;
   }
 }

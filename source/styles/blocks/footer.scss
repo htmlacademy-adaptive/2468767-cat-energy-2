@@ -11,12 +11,12 @@
   transform: translateY(-15px);
 
   @media #{$tablet} {
-      flex-direction: row;
-      padding: 63px 0;
+    flex-direction: row;
+    padding: 63px 0;
   }
 
   @media #{$desktop} {
-      padding: 75px 0;
+    padding: 75px 0;
   }
 }
 
@@ -28,8 +28,8 @@
   transform: translate(3px, 2px);
 
   @media #{$tablet} {
-      padding: 0;
-      justify-content: flex-start;
+    padding: 0;
+    justify-content: flex-start;
   }
 }
 
