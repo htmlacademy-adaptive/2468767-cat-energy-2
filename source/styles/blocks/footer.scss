@@ -20,7 +20,7 @@
   }
 }
 
-.footer__logo {
+.main-footer__logo {
   display: flex;
   justify-content: center;
   padding-bottom: 15px;
@@ -33,15 +33,15 @@
   }
 }
 
-.footer__logo svg {
+.main-footer__logo svg {
   fill: $text-color-special;
 }
 
-.footer__logo-link:focus svg,
-.footer__logo svg:hover {
+.main-footer__logo-link:focus svg,
+.main-footer__logo svg:hover {
   fill: $black-super-light;
 }
 
-.footer__logo svg:active {
+.main-footer__logo svg:active {
   fill: $black-extra-light;
 }
