@@ -1,5 +1,4 @@
-﻿
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
   const slider = document.querySelector('.slider');
   const before = document.querySelector('.image-before');
   const container = document.querySelector('.comparator-container');
