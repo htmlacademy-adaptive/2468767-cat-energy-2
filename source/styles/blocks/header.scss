@@ -29,7 +29,7 @@
 }
 
 @media #{$mobile-only} {
-  .header--nojs {
+  .main-header--nojs {
     display: block;
     padding-bottom: 0;
   }
