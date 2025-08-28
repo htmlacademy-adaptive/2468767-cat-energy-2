@@ -29,7 +29,14 @@
 }
 
 @media #{$mobile-only} {
-  .header--nojs .header__inner {
+  .header--nojs  {
+    display: block;
+    padding-bottom: 0;
+  }
+}
+
+@media #{$mobile-only} {
+   .header__inner {
     display: block;
     padding-bottom: 0;
   }
