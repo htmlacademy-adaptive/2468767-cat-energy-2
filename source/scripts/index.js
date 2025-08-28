@@ -79,4 +79,3 @@ document.addEventListener('DOMContentLoaded', () => {
     slider.style.left = `${percent}%`;
   });
 });
-
