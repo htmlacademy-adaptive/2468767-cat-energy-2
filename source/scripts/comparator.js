@@ -1,4 +1,5 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+﻿
+document.addEventListener('DOMContentLoaded', () => {
   const slider = document.querySelector('.slider');
   const before = document.querySelector('.image-before');
   const container = document.querySelector('.comparator-container');
@@ -6,7 +7,7 @@
 
   function updateImageSizes() {
     const containerWidth = container.offsetWidth;
-    before.style.width = `${containerWidth / 2 }px`;
+    before.style.width = `${containerWidth / 2}px`;
   }
 
   updateImageSizes();
@@ -32,8 +33,8 @@
     x = Math.max(0, Math.min(x, containerRect.width));
 
     const percent = (x / containerRect.width) * 100;
-    before.style.width = `${percent }%`;
-    slider.style.left = `${percent }%`;
+    before.style.width = `${percent}%`;
+    slider.style.left = `${percent}%`;
   });
 
   slider.addEventListener('touchstart', (e) => {
@@ -56,7 +57,7 @@
     x = Math.max(0, Math.min(x, containerRect.width));
 
     const percent = (x / containerRect.width) * 100;
-    before.style.width = `${percent }%`;
-    slider.style.left = `${percent }%`;
+    before.style.width = `${percent}%`;
+    slider.style.left = `${percent}%`;
   });
 });
