@@ -24,8 +24,7 @@
   @media #{$tablet} {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    row-gap: 37px;
-    column-gap: 62px;
+    gap: 37px 62px;
     margin-bottom: 19px;
 
     @media #{$desktop} {

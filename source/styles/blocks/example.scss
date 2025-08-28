@@ -14,19 +14,21 @@
 
   @media #{$tablet} {
     background-color: transparent;
-    background-image: linear-gradient(
-      to top,
-      $grey-super-light 462px,
-      transparent 462px
-    );
+    background-image:
+      linear-gradient(
+        to top,
+        $grey-super-light 462px,
+        transparent 462px
+      );
   }
 
   @media #{$desktop} {
-    background-image: linear-gradient(
-      to top,
-      $grey-super-light 461px,
-      transparent 461px
-    );
+    background-image:
+      linear-gradient(
+        to top,
+        $grey-super-light 461px,
+        transparent 461px
+      );
   }
 }
 

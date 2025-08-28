@@ -1,12 +1,16 @@
 .hero {
   background-color: $white;
-  background-image: image-set(
+  background-image:
+    image-set(
       url("../../images/hero-bg-mobile@1x.jpg") type("image/jpg"),
       url("../../images/hero-bg-mobile@2x.jpg") type("image/jpg") 2x,
       url("../../images/hero-bg-mobile@1x.webp") type("image/webp"),
-      url("../../images/hero-bg-mobile@2x.webp") type("image/webp") 2x
-    ),
-    linear-gradient(to bottom, $green-gradient 303px, transparent 302px);
+      url("../../images/hero-bg-mobile@2x.webp") type("image/webp") 2x),
+    linear-gradient(
+        to bottom,
+        $green-gradient 303px,
+        transparent 302px
+      );
   background-repeat: no-repeat;
   background-size: 320px 302px, 100% 100%;
   background-position: center top;
@@ -19,13 +23,17 @@
   }
 
   @media #{$desktop} {
-    background-image: image-set(
+    background-image:
+      image-set(
         url("../../images/hero-bg-desktop@1x.jpg") type("image/jpg"),
         url("../../images/hero-bg-desktop@2x.jpg") type("image/jpg") 2x,
         url("../../images/hero-bg-desktop@1x.webp") type("image/webp"),
-        url("../../images/hero-bg-desktop@2x.webp") type("image/webp") 2x
-      ),
-      linear-gradient(to left, $green-gradient 50%, transparent 50%);
+        url("../../images/hero-bg-desktop@2x.webp") type("image/webp") 2x),
+      linear-gradient(
+          to left,
+          $green-gradient 50%,
+          transparent 50%
+        );
     background-size: 1041px 694px, 100% 100%;
     background-position: top left calc(50% + 521px), center;
     min-height: 694px;

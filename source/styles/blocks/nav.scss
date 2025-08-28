@@ -13,10 +13,7 @@
 .menu-nav::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  inset: 0;
   background-color: $white;
   z-index: -1;
   border-bottom: 1px solid $grey-light;
@@ -51,17 +48,15 @@
   list-style: none;
 
   @media #{$tablet} {
-    flex-direction: row;
     justify-content: space-between;
-    transform: translate(6px, 0px);
+    transform: translate(6px, 0);
     position: relative;
     top: 0;
     font-size: 18px;
     line-height: 24px;
-    column-gap: 33px;
-    row-gap: 15px;
+    gap: 15px 33px;
     transition: none;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     z-index: 0;
     padding-right: 22px;
     padding-left: 11px;
@@ -70,8 +65,7 @@
   @media #{$desktop} {
     font-size: 20px;
     line-height: 1;
-    column-gap: 34px;
-    row-gap: 20px;
+    gap: 20px 34px;
     background-color: transparent;
   }
 }
@@ -87,6 +81,7 @@
     opacity: 0;
     filter: blur(28px);
   }
+
   to {
     opacity: 1;
     filter: blur(0);
