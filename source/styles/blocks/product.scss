@@ -1,0 +1,241 @@
+.product__title {
+  padding: 27px 0 41px;
+  text-align: start;
+  border-bottom: 1px solid $grey-special;
+
+  @media #{$tablet} {
+    padding: 40px 30px 70px;
+    text-align: start;
+    border: none;
+
+    @media #{$desktop} {
+      padding: 60px 0 64px;
+    }
+  }
+}
+
+.product__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  column-gap: 20px;
+
+  @media #{$tablet} {
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    gap: 45px 60px;
+    margin-bottom: 73px;
+  }
+
+  @media #{$desktop} {
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    gap: 46px 80px;
+    margin-bottom: 76px;
+  }
+}
+
+.product__list-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  padding: 20px 20px 25px;
+  border-bottom: 1px solid $grey-special;
+  margin: 0 -20px;
+  min-height: 209px;
+
+  @media #{$tablet} {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 37px 40px;
+    margin: 16px 0 0;
+    padding-top: 14px;
+    background-color: $grey-extra-light;
+    background-image: linear-gradient(to bottom, $white 81px, transparent 81px);
+  }
+}
+
+@media #{$tablet} {
+  .product__list-item--more {
+    background-color: $white;
+    border: 2px solid $grey-super-light;
+    margin-top: 98px;
+    padding-top: 2px;
+    padding-bottom: 36px;
+  }
+}
+
+.product__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9px;
+
+  @media #{$tablet} {
+    width: 100%;
+    height: 210px;
+    margin-bottom: 20px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 13px;
+  }
+}
+
+.product__icon {
+  display: block;
+  margin: 5px auto 23px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(25px);
+
+  @media #{$tablet} {
+    margin: auto;
+    width: 60px;
+    height: 60px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 41px;
+  }
+}
+
+.product__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 21px;
+  width: 100%;
+
+  @media #{$tablet} {
+    justify-content: unset;
+    margin-bottom: 23px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 27px;
+  }
+}
+
+.product__card--more {
+  grid-column: 1 / -1;
+  height: 100%;
+}
+
+.product__card-title {
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $text-color-secondary;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 14px;
+  max-width: 99px;
+  transform: translate(-2px, -2px);
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0;
+    max-width: 135px;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+}
+
+.product__card-title--more {
+  color: $text-color-special;
+  padding: 0;
+  align-self: center;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 8px;
+  transform: translateY(25px);
+
+  @media #{$tablet} {
+    margin-bottom: 24px;
+    max-width: 178px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 27px;
+  }
+}
+
+.product__card-item {
+  display: flex;
+  justify-content: space-between;
+
+  @media #{$tablet} {
+    border-bottom: 1px solid $grey;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+  }
+
+  @media #{$desktop} {
+    padding-bottom: 5px;
+  }
+}
+
+.product__card-name,
+.product__card-value {
+  font-size: 12px;
+  line-height: 16px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.product__card-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 11px 21px;
+  text-align: center;
+  transform: translateY(25px);
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 81px;
+  }
+
+  @media #{$desktop} {
+    margin: 0 0 92px;
+  }
+}
+
+.product__button {
+  grid-column: 1 / -1;
+  transform: translateY(-1px);
+}
+
+.product__button--transparent {
+  background-color: $grey-extra-light;
+  color: $base-text-color;
+}
+
+.product__button--transparent:focus,
+.product__button--transparent:hover,
+.product__button--transparent:active {
+  background-color: $grey-special;
+  color: $base-text-color;
+}
+
+@media screen and (max-width: 768px) {
+  .product__card--more {
+    height: auto;
+  }
+
+  .product__button--transparent {
+    height: 60px;
+    color: #000000;
+  }
+}

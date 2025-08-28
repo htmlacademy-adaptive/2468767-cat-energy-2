@@ -1,0 +1,140 @@
+.effect__title {
+  line-height: 40px;
+  margin-bottom: 42px;
+
+  @media #{$tablet} {
+    line-height: 60px;
+    padding-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 32px;
+    transform: translateY(-5px);
+  }
+}
+
+.effect__list {
+  padding: 0;
+  position: relative;
+  margin: 0;
+  margin-bottom: 47px;
+  list-style: none;
+
+  @media #{$tablet} {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 37px 62px;
+    margin-bottom: 19px;
+
+    @media #{$desktop} {
+      column-gap: 80px;
+      margin-bottom: 69px;
+      display: flex;
+    }
+  }
+}
+
+.effect__item {
+  min-height: 60px;
+  margin-bottom: 20px;
+  transform: translateY(-3px);
+
+  @media #{$tablet} {
+    min-height: 280px;
+    width: 250px;
+    margin: 0;
+    padding-top: 40px;
+    position: relative;
+    counter-increment: effect__list;
+  }
+}
+
+@media #{$tablet} {
+  .effect__item::after {
+    content: counter(effect__list);
+    position: absolute;
+    font-family: $font-primary;
+    font-size: 280px;
+    line-height: 1;
+    color: $grey-extra-light;
+    top: 0;
+    left: 116px;
+    z-index: -1;
+  }
+}
+
+.effect__item::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-color: $green-base;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  background-position: center;
+
+  @media #{$tablet} {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.effect__item--leaf::before {
+  content: "";
+  background-image: url("../../images/icons/icon-leaf.svg#icon-leaf");
+  background-size: 30px 32px;
+
+  @media #{$tablet} {
+    grid-column: 1 / 2;
+  }
+}
+
+.effect__item--powder::before {
+  content: "";
+  background-image: url("../../images/icons/icon-powder.svg#icon-powder");
+  background-size: 26px 29px;
+
+  @media #{$tablet} {
+    grid-column: 2 / 3;
+  }
+}
+
+.effect__item--eat::before {
+  content: "";
+  background-image: url("../../images/icons/icon-eat.svg#icon-eat");
+  background-size: 25px 30px;
+
+  @media #{$tablet} {
+    grid-column: 1 / 2;
+  }
+}
+
+.effect__item--time::before {
+  content: "";
+  background-image: url("../../images/icons/icon-time.svg#icon-time");
+  background-size: 26px 31px;
+
+  @media #{$tablet} {
+    grid-column: 2 / 3;
+  }
+}
+
+.effect__text {
+  padding-left: 80px;
+  margin: 0;
+
+  & br {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    padding: 110px 0 57px;
+    font-size: 16px;
+    line-height: 24px;
+
+    & br {
+      display: block;
+    }
+  }
+}

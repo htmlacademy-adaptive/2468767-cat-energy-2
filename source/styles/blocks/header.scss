@@ -1,5 +1,43 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.main-header {
+  min-height: 65px;
+  position: relative;
+  z-index: 10;
+}
+
+@media #{$desktop} {
+  .main-header--decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.main-header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0 11px;
+  align-items: center;
+
+  @media #{$desktop} {
+    padding-top: 55px;
+  }
+
+  @media #{$tablet} {
+    padding-right: 4px;
+  }
+}
+
+@media #{$mobile-only} {
+  .main-header--nojs {
+    display: block;
+    padding-bottom: 0;
+  }
+}
+
+@media #{$mobile-only} {
+  .main-header__inner {
+    display: block;
+    padding-bottom: 0;
+  }
 }

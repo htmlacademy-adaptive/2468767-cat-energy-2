@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Александра Аверьянова](https://up.htmlacademy.ru/adaptive-individual/2/user/2468767).
-* Наставник: `Неизвестно`.
+* Студент: [Александра Аверьянова](https://htmlacademy.ru//profile/id2468767).
+* Наставник: `Максим Боровик`.(https://htmlacademy.ru/profile/id1025673)
 
 ---
 
