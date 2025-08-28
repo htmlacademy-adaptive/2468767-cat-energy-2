@@ -79,3 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slider.style.left = `${percent}%`;
   });
 });
+
+function validateNumericInput(input) {
+  input.value = input.value.replace(/[^0-9]/g, '');
+}
