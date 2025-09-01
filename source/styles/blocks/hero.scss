@@ -188,6 +188,8 @@
   padding-left: 23px;
   padding-right: 27px;
   text-transform: uppercase;
+  display: block;
+  width: 280px;
 
   @media screen and (max-width: 1440px) {
     margin-left: 90px;
@@ -205,6 +207,7 @@
 
   @media #{$desktop} {
     margin-left: 83px;
+    width: 280px;
   }
 }
 
