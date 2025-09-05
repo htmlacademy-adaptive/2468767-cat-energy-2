@@ -21,8 +21,9 @@
   justify-content: center;
   align-items: center;
 }
+
 .news-n-sub__paragraph {
-  font-family: "Oswald";
+  font-family: $font-primary;
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
@@ -54,16 +55,18 @@
   width: 752px;
   transform: translate(1px, 3px);
 }
+
 .news-n-sub__submit {
-  font-family: "Oswald";
+  font-family: $font-primary;
   font-size: 22px;
   text-transform: uppercase;
   display: block;
   width: 495px;
   text-indent: 10px;
 }
+
 .news-n-sub__submit::placeholder {
-  font-family: "Oswald";
+  font-family: $font-primary;
   text-transform: uppercase;
   font-size: 18px;
 }
@@ -77,6 +80,7 @@
   outline: 2px solid $base-text-color;
   z-index: 100;
 }
+
 .additional__title {
   font-family: $font-primary;
   font-size: 24px;
