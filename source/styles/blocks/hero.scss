@@ -190,6 +190,7 @@
   text-transform: uppercase;
   display: block;
   width: 280px;
+  margin-top: -12px;
 
   @media screen and (max-width: 1440px) {
     margin-left: 90px;
@@ -207,7 +208,7 @@
 
   @media #{$desktop} {
     margin-left: 83px;
-    width: 280px;
+    width: 250px;
   }
 }
 
@@ -246,7 +247,7 @@
     grid-column: 2/3;
     grid-row: 1/4;
     top: 50%;
-    transform: translate(-51%, -16%);
+    transform: translate(-40%, -30%);
     z-index: 1;
   }
 }

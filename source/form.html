@@ -12,6 +12,10 @@
   <link rel="icon" href="favicons/favicons-152.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page__body">
@@ -72,7 +76,7 @@
               </div>
               <div class="selection__data">
                 <label class="selection__items-label" for="weight">Вес (кг):*</label>
-                <input class="selection__items-input" type="number" name="weight" required id="weight" placeholder="8"
+                <input class="selection__items-input" type="text" name="weight" required id="weight" placeholder="8"
                   min="0" max="40" oninput="validateNumericInput(this)">
               </div>
               <div class="selection__data">
