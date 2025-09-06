@@ -4,10 +4,10 @@
   margin-left: -20px;
   margin-right: -20px;
 
-   @media #{$desktop} {
-     border: none;
-     width: 42%;
-   }
+  @media #{$desktop} {
+    border: none;
+    width: 42%;
+  }
 }
 
 .menu-nav::before {

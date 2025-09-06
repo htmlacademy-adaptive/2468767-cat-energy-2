@@ -15,11 +15,6 @@ body {
   line-height: 18px;
   margin: 0;
   overflow-x: hidden;
-
-  @media #{$mobile} {
-    margin: 0 auto;
-    width: 320px;
-  }
 }
 
 .page__body {

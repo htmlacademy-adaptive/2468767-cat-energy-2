@@ -17,16 +17,16 @@
     padding: 62px 40px;
   }
 
+  @media #{$mobile} {
+    padding: 26px 0 5px;
+  }
+
   @media #{$desktop} {
     position: absolute;
     background-color: $white;
     top: 95px;
     padding: 58px 78px 60px 80px;
     width: 565px;
-  }
-
-  @media #{$mobile} {
-    padding: 26px 0 5px;
   }
 }
 
