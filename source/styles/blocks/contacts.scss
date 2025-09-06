@@ -24,6 +24,10 @@
     padding: 58px 78px 60px 80px;
     width: 565px;
   }
+
+  @media #{$mobile} {
+    padding: 26px 0 5px 0;
+  }
 }
 
 .contacts__title {

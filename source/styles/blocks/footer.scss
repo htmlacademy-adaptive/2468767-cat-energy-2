@@ -18,6 +18,10 @@
   @media #{$desktop} {
     padding: 75px 0;
   }
+
+  @media #{$mobile} {
+    padding: 20px 0;
+  }
 }
 
 .main-footer__logo {
@@ -30,6 +34,10 @@
   @media #{$tablet} {
     padding: 0;
     justify-content: flex-start;
+  }
+
+  @media #{$mobile} {
+    padding-bottom: 0;
   }
 }
 

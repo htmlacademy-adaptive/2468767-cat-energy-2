@@ -4,6 +4,14 @@
   max-width: 570px;
   margin: 0 auto;
   overflow: hidden;
+
+    @media #{$tablet} {
+    transform: translate(-10%, -10%);
+  }
+
+  @media #{$mobile} {
+    transform: translate(-38%, -10%);
+  }
 }
 
 .image-wrapper {

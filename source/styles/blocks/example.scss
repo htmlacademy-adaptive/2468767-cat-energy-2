@@ -35,13 +35,13 @@
 .example__inner {
   padding: 27px 0 40px;
 
-  @media #{$tablet} {
-    padding-bottom: 101px;
-  }
-
   @media #{$desktop} {
     position: relative;
     padding: 0;
+  }
+
+  @media #{$mobile} {
+    padding: 57px 0 0;
   }
 }
 

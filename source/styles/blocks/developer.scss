@@ -13,6 +13,10 @@
     padding: 0;
     min-width: 165px;
   }
+
+  @media #{$mobile} {
+    padding-top: 30px;
+  }
 }
 
 .developer span {
