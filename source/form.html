@@ -12,6 +12,10 @@
   <link rel="icon" href="favicons/favicons-152.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff" as="font" type="font/woff">
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff" as="font" type="font/woff">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
 </head>
 
 <body class="page__body">
@@ -72,8 +76,8 @@
               </div>
               <div class="selection__data">
                 <label class="selection__items-label" for="weight">Вес (кг):*</label>
-                <input class="selection__items-input" type="number" name="weight" required id="weight" placeholder="8"
-                  min="0" max="40" oninput="validateNumericInput(this)">
+                <input class="selection__items-input" type="text" name="weight" required id="weight" placeholder="8"
+                  oninput="validateNumericInput(this)">
               </div>
               <div class="selection__data">
                 <label class="selection__items-label" for="age">Возраст (лет):</label>
@@ -123,14 +127,15 @@
           <div class="selection__items selection__items-connect">
             <div class="selection__data">
               <label class="selection__items-label" for="email">E-mail:*</label>
-              <input class="selection__items-input selection__items-input--connect selection__items-input--email" type="email" name="email" id="email"
-                placeholder="kuklachev@gmail.com">
+              <input class="selection__items-input selection__items-input--connect selection__items-input--email"
+                type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
               <span class="selection__icon">
               </span>
             </div>
             <div class="selection__data">
               <label class="selection__items-label" for="phone">Телефон:*</label>
-              <input class="selection__items-input selection__items-input--connect selection__items-input--phone" type="tel" name="phone" id="phone" placeholder="8(960)900-60-90" required>
+              <input class="selection__items-input selection__items-input--connect selection__items-input--phone"
+                type="tel" name="phone" id="phone" placeholder="8(960)900-60-90" required>
               <span class="selection__icon"></span>
             </div>
           </div>

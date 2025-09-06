@@ -23,6 +23,8 @@
 
   @media #{$tablet} {
     margin-right: 13px;
+    position: absolute;
+    z-index: 1;
   }
 
   @media #{$desktop} {
@@ -36,5 +38,11 @@
   @media #{$desktop} {
     width: 118px;
     height: 21px;
+  }
+
+  @media #{$tablet} {
+    position: absolute;
+    z-index: 1;
+    transform: translate(80%, 15px);
   }
 }

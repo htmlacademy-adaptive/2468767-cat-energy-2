@@ -220,12 +220,21 @@
 .product__button--transparent {
   background-color: $grey-extra-light;
   color: $base-text-color;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
 }
 
 .product__button--transparent:focus,
 .product__button--transparent:hover,
 .product__button--transparent:active {
-  background-color: $grey-special;
+  background-color: $grey-extra-light;
   color: $base-text-color;
 }
 

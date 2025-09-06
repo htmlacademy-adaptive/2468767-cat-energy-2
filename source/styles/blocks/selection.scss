@@ -3,7 +3,7 @@
   margin: 0 -20px;
 
   @media #{$tablet} {
-    padding: 42px 40px 54px;
+    padding: 75px 40px 54px;
     margin: 0;
   }
 
@@ -36,6 +36,10 @@
 
   @media #{$desktop} {
     margin: 0;
+  }
+
+  @media #{$tablet} {
+    margin-bottom: 42px;
   }
 }
 
@@ -73,7 +77,7 @@
   background-color: $white;
 
   @media #{$tablet} {
-    margin: 0 -40px;
+    margin: 0;
     padding: 0 40px;
   }
 
@@ -118,7 +122,6 @@
 
   @media #{$tablet} {
     max-width: 1280px;
-    padding-left: 40px;
   }
 }
 
@@ -401,8 +404,11 @@
   transform: translateX(50px);
 
   @media #{$tablet} {
-    gap: 28px 63px;
-    margin: 53px 140px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 123px;
+    padding: 66px 20px 0 0;
+    margin-left: 80px;
   }
 
   @media #{$desktop} {

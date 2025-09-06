@@ -19,7 +19,7 @@
 
   @media #{$tablet} {
     background-image: none;
-    margin-bottom: 380px;
+    margin-bottom: 410px;
   }
 
   @media #{$desktop} {
@@ -88,9 +88,9 @@
   @media #{$tablet} {
     color: $black;
     text-align: start;
-    padding-top: 0;
     padding-left: 90px;
     margin-bottom: 40px;
+    transform: translate(1%, 7%);
   }
 
   @media #{$desktop} {
@@ -116,9 +116,9 @@
     font-size: 20px;
     line-height: 20px;
     text-align: start;
-    padding-top: 0;
     padding-left: 90px;
     margin-bottom: 50px;
+    transform: translate(1%, -25%);
   }
 
   @media #{$desktop} {
@@ -190,6 +190,7 @@
   text-transform: uppercase;
   display: block;
   width: 280px;
+  margin-top: -12px;
 
   @media screen and (max-width: 1440px) {
     margin-left: 90px;
@@ -208,6 +209,14 @@
   @media #{$desktop} {
     margin-left: 83px;
     width: 280px;
+  }
+
+  @media #{$tablet} {
+    width: 250px;
+  }
+
+  @media #{$mobile} {
+    margin-left: 0;
   }
 }
 
@@ -246,7 +255,7 @@
     grid-column: 2/3;
     grid-row: 1/4;
     top: 50%;
-    transform: translate(-51%, -16%);
+    transform: translate(-40%, -30%);
     z-index: 1;
   }
 }
