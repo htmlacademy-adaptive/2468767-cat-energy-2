@@ -16,7 +16,7 @@ body {
   margin: 0;
   overflow-x: hidden;
 
-   @media #{$mobile} {
+  @media #{$mobile} {
     margin: 0 auto;
     width: 320px;
   }
